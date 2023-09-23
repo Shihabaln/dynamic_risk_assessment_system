@@ -1,7 +1,5 @@
 from flask import Flask, session, jsonify, request
 import pandas as pd
-import numpy as np
-import pickle
 import json
 import os
 import subprocess
@@ -52,7 +50,7 @@ def calculate_score():
         str: model f1 score
     """
     
-    result = subprocess.run(['python', 'utils/scoring.py'],capture_output=True)
+    result = subprocess.run(['python', 'scoring.py'],capture_output=True)
     # Get the output of the function as a string
     output_str = result.stdout.decode('utf-8')
 

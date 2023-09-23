@@ -1,1 +1,1 @@
-50 * * * * python scripts/app.py && python scripts/fullprocess.py
+10 * * * * python scripts/app.py && python scripts/fullprocess.py
